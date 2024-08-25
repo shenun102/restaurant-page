@@ -8,9 +8,8 @@ import loadAbout from "./about.js";
 const content = document.querySelector("#content");
 
 // Load the home page
-// loadHome();
-// loadMenu();
-loadAbout();
+loadHome();
+
 
 // Event listener for buttons
 const navBtn = document.querySelectorAll(".nav-btn");
@@ -28,7 +27,7 @@ navBtn.forEach((btn) =>
     }
     if (e.target.classList.contains("about")) {
       console.log("about");
-      // loadAbout();
+      loadAbout();
     } else return;
   })
 );
