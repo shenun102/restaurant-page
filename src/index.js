@@ -1,5 +1,6 @@
 // index.js
+// Import css
+import "./styles.css";
+import { test } from "./test";
 
-import {test} from "./test"
-
-console.log(test)
+console.log(test);
