@@ -1,6 +1,10 @@
 // index.js
 // Import css
 import "./styles.css";
-import { test } from "./test";
+import loadHome from "./home.js";
+// import loadMenu from "./menu.js";
+// import loadAbout from "./about.js";
 
-console.log(test);
+// Load the home page
+loadHome();
+
