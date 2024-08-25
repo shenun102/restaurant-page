@@ -3,13 +3,14 @@
 import "./styles.css";
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
-// import loadAbout from "./about.js";
+import loadAbout from "./about.js";
 
 const content = document.querySelector("#content");
 
 // Load the home page
 // loadHome();
 // loadMenu();
+loadAbout();
 
 // Event listener for buttons
 const navBtn = document.querySelectorAll(".nav-btn");
