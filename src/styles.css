@@ -69,7 +69,8 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
+
   gap: 50px;
 }
 
@@ -100,4 +101,61 @@ body::before {
   font-family: sans-serif, Arial, Helvetica;
   font-size: 1.2rem;
   text-align: center;
+}
+
+/* Menu Page */
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-header {
+  font-family: "Italianno", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.item-container {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.menu-item {
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid rgb(188, 188, 188);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: gainsboro;
+  gap: 1rem;
+}
+
+.item-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 1rem;
+}
+
+.item-price,
+.item-header {
+  text-align: center;
+  /* padding: 0.5rem; */
+  font-weight: 600;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 1.2rem;
 }
