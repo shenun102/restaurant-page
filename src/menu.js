@@ -14,8 +14,7 @@ export default function loadMenu() {
   const itemContainer = menuPage.createDiv("", "", "item-container");
 
   // Add element to menu container
-  menuContainer.appendChild(menuHeader);
-  menuContainer.appendChild(itemContainer);
+  menuContainer.append(menuHeader, itemContainer);
   // Add menuContainer to content
   content.appendChild(menuContainer);
 
@@ -55,38 +54,7 @@ export default function loadMenu() {
     const itemPrice = menuPage.createDiv(item.price, "", "item-price");
 
     // Append all elements to menuItem and then append menuItem to itemContainer
-    menuItem.appendChild(itemHeader);
-    menuItem.appendChild(img);
-    menuItem.appendChild(itemPrice);
-
+    menuItem.append(itemHeader, img, itemPrice);
     itemContainer.appendChild(menuItem);
   });
-}
-
-{
-  /* <div class="menu-container">
-        <div class="menu-header">Menu</div>
-        <div class="item-container">
-          <div class="menu-item">
-            <div class="item-header">Strawberry Mochi</div>
-            <img src="./img/strawberry-mochi.jpg" alt="" class="item-img" />
-            <div class="item-price">£ 9.99</div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">Matcha Mochi</div>
-            <img src="./img/matcha-mochi.jpg" alt="" class="item-img" />
-            <div class="item-price">£ 9.99</div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">Cramel Mochi</div>
-            <img src="./img/caramel-mochi.png" alt="" class="item-img" />
-            <div class="item-price">£ 9.99</div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">Pistachio Mochi</div>
-            <img src="./img/pistachio-mochi.jpg" alt="" class="item-img" />
-            <div class="item-price">£ 9.99</div>
-          </div>
-        </div>
-      </div> */
 }

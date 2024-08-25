@@ -1,6 +1,5 @@
 export default class Page {
   constructor() {
-    console.log("Initiated");
   }
 
   createImg(src, alt, classNames = "", id = "") {
